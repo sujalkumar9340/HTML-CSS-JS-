@@ -1,0 +1,16 @@
+.container{
+    border: 2px solid red;
+    display: grid;
+    row-gap: 34px;
+    column-gap: 34px;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    /* agar hai fan k aage gap ye piche gap dethe hai to error dene lage ga */
+    /*   jitna number of column banana hai utna px mai data de do ho jaye ja */
+    grid-template-rows: 220px 34px 45px;
+    /* iska matlb hai pahela row ke sare  box ko 220 px mile ga */
+      /* second row ko 34px and third row ke sare element ko 45px                                        */
+                          
+}
+.box{
+    border: 2px solid blue;
+}
