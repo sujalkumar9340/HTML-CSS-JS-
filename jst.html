@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript</title>
+    <script src="./arrayobject.js" defer></script>
+  </head>
+  <body>
+    <div id="firstcontainer">
+    <button class="click me">clicvk me</button>
+    </div>
+    <script>
+      document.write("helow we are writting the name ");
+    </script>
+
+    <script>
+      // "use strict"
+         const datas=[{name:"ajay",profression:"software engineer"},{
+             name:"Anuj",profression:"softwere engineer"
+         }]
+          function getdatas(){
+             console.log("hellow  tinku jiya ");
+            setTimeout(()=>{
+             let output="";
+            datas.forEach((data,index)=>{
+              output+=  `<li>${data.name}</li>`;
+            })
+            document.write(output);
+             },2000);
+
+         }
+         function createdata(newdata ){
+            setTimeout(() => {
+                    console.log("ye dekhne k liye hai ki promise phele call kar rahe hai ki  nahi")
+                },1000);
+            //  return new Promise((resolve,reject)=>{
+                setTimeout(() => {
+                    datas.push(newdata);
+                 
+                    // let error=false;
+                    // if(!error){
+                    //     resolve("getting resolve");
+                    // }
+                    // else{
+                    //     reject("kuch to garbar hai ...")
+                    // }
+                }, 1000);
+            console.log("promises try karne k liye use kiye hai")}  
+                
+                
+               
+           
+         
+        //  createdata({name:"vivek",profression:"softwere engineer"}
+        //  ).then((resolveva)=>{console.log(resolveva),getdatas}).catch((error)=>{console.log(error)});
+         
+
+       async function start(){
+            await createdata({name:"vivek",profression:"softwere engineer"})
+            getdatas();
+        }
+  start();
+
+      var name="sujal";
+      console.log(name);
+    </script>
+    <script>
+  // "use strict";
+
+document.write("hellow traila short");
+   
+    // console.log(this);
+    try{
+   a=98;}
+   catch( exception){
+  console.log("yes there us fault");
+   }
+  //  console.log(a);
+function sayhello(){
+  // console.log(this)
+    console.log("hee has deli");
+}
+    // sayhello("fgf");
+
+     let counter1={
+      count: 10,
+      bty:" jlksjdpoi",
+      increment:function(){
+        let bty="kll;s;ls";
+         console.log(this);  // here this is targeting outer bty simillar to java
+        return ++ this.count;
+      }
+       
+     }
+  console.log(counter1.increment());
+  console.log(counter1.increment());
+  console.log(counter1.increment());
+  console.log("kya sach mai iske bad print nahi hoga");
+     
+  function de(){
+    console.log(this)
+  }
+
+
+de();
+
+
+function MyConstructor() {
+    console.log(this); // 'this' refers to the newly created instance of the constructor
+}
+
+// const obj1 = new MyConstructor();
+//  console.log(MyConstructor)
+   MyConstructor();
+
+  console.log("kdkldslkjlkjdlkmsk");
+  function uy(){
+    name:"sujal"
+    console.log(name);
+  }
+   
+    let rename={
+            a:56,
+            name:"sujal kumar",
+           ser: function con(){
+            
+console.log(this);
+return "this is returning "
+
+            }
+    }
+     
+  //   console.log(rename.ser());
+
+  //   function check(()=> {
+  // console.log("here it is callback function")
+  //   }){
+  //     // var me="sujal";
+  //     // let gt=65;
+  //     console.log("jkljljads");    }
+
+   function check(){
+    setTimeout(sayhello ,50000)
+    console.log("iske andar nahi chelega");
+   }
+
+      check();
+
+  </script>
+       
+
+</body>
+</html>
